@@ -6,7 +6,7 @@ int main(){
     cin >> ch;
     cout << ch <<endl;
 
-    cout <<((int)ch[5]) <<endl;
+    cout <<((int)ch[5]) <<endl; 
 
     return 0;
 }
