@@ -12,18 +12,29 @@ int main(){
 
     cin.getline(ch,10);
 
-    cout << ch <<endl;
+    cout <<"Befor: "<< ch <<endl;
 
     // Length of the string
     int count = 0;
-    int i = 0;
-    while(ch[i] != '\0'){
+
+    while(ch[count] != '\0'){
         count++;
-        i++;
+        
     }
-    cout << "length = " << count <<endl;
+    // cout << "length = " << count <<endl;
 
     // Reverse string
+
+    int i = 0;
+    int j = count -1;
+
+    while(i<=j){
+        swap(ch[i],ch[j]);
+        i++;
+        j--;
+    }
+    cout <<"After: " << ch << endl;
+
     
 
     return 0;
