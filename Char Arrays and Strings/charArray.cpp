@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string.h>
 using namespace std;
 
 int main(){
@@ -15,18 +16,19 @@ int main(){
     cout <<"Befor: "<< ch <<endl;
 
     // Length of the string
-    int count = 0;
+    // int len = 0;
 
-    while(ch[count] != '\0'){
-        count++;
+    // while(ch[len] != '\0'){
+    //     len++;
         
-    }
-    // cout << "length = " << count <<endl;
+    // }
+    int len = strlen(ch);
+    // cout << "length = " << len <<endl;
 
     // Reverse string
 
     int i = 0;
-    int j = count -1;
+    int j = len -1;
 
     while(i<=j){
         swap(ch[i],ch[j]);
