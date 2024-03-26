@@ -2,18 +2,18 @@
 #include <string.h>
 using namespace std;
 
-// void upperCase(char ch[],int size){
-//     int i = 0;
-//     while(ch[i]!='\0'){
-//         if(ch[i]>='a' && ch[i]<='z'){
-//             ch[i]  = ch[i] - 'a'+'A';
-//         }
-//         i++;
-//     }
-// }
+void upperCase(char ch[],int size){
+    int i = 0;
+    while(ch[i]!='\0'){
+        if(ch[i]>='a' && ch[i]<='z'){
+            ch[i]  = ch[i] - 'a'+'A';
+        }
+        i++;
+    }
+}
 
 int main(){
-    // char ch[10];
+    char ch[100];
     // cin >> ch;
     // cout << ch <<endl;
 
@@ -21,9 +21,9 @@ int main(){
 
     // if we want to accept string with space we uses getline()
 
-    // cin.getline(ch,100);
+    cin.getline(ch,100);
 
-    // cout <<"Befor: "<< ch <<endl;
+    cout <<"Befor: "<< ch <<endl;
 
     // Length of the string
     // int len = 0;
@@ -50,9 +50,9 @@ int main(){
 
     // lower case to upper case
 
-    // upperCase(ch,100);
-    // cout << ch << endl;
-    cout << "FIne " <<endl;
+    upperCase(ch,100);
+    cout << "After :" <<ch << endl;
+    // cout << "FIne " <<endl;
     
 
     return 0;
