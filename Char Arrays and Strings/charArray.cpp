@@ -48,7 +48,7 @@ int main(){
     // cout <<"After: " << ch << endl;
     // cout <<"After: " <<reverse(0,len);
 
-    // lower case to upper case
+    // lower case to upper case char
 
     upperCase(ch,100);
     cout << "After :" <<ch << endl;
